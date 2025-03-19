@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const app = express();
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/task-project');
+mongoose.connect('mongodb+srv://test123:testing2003@cluster0.abeugnm.mongodb.net/task-project');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
